@@ -1,9 +1,12 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Slider from '../Component/Slider'
 import DiscountProduct from './HomePage/DiscountProduct'
 import TopProduct from './HomePage/TopProduct'
 import NewProduct from './HomePage/NewProduct'
 import Advertisment from './HomePage/Advertisment'
+import { Link, useNavigate } from 'react-router-dom'
+import axios from 'axios'
+import Product from '../Component/Product'
 
 
 
@@ -53,19 +56,56 @@ const products = [
     
   },
 ]
+
+
 const HomePage = () => {
+  const [getCategory, setGetCategory] = useState([]);
+  const fetchCategory = async () => {
+    try {
+      const fetchCategoryResult = await axios.get(
+        `${import.meta.env.VITE_API_URL}/categories`
+      );
+      setGetCategory(fetchCategoryResult.data.category);
+    } catch (e) {
+      console.log(e.message);
+    }
+  };
+  useEffect(() => {
+    fetchCategory();
+  }, []);
   return (    
     <div>
-      <div className="justify-center items-start mx-20 gap-4 mt-24">
-          <Slider />
-          <div className='justify-center'>
-            <h1 className='text-center font-bold text-3xl'>SUPER SPORTS</h1>
-            <h2 className='text-center text-2xl'>LOW-PRICED SPORTSWEAR IN HIGH QUALITY BY FAMOUS BRANDS</h2>
-            <h3 className='text-center text-1xl'>We love sports and good deals! At SportCenter, we provide a huge range of carefully chosen sportswear and accessories at incredibly reasonable costs. We have everything that will quicken the heart of your athlete, from matching clothing and non-slip shoes to club goods!</h3>
+      <div className="justify-center items-start mx-12 gap-4 ">        
+        <div className="flex justify-center items-start mx-8 gap-4 ">
+          <div className="category ml-20">
+            <p className="font-bold text-xl mb-8">Shop By Category</p>
+            <ul className="flex justify-start items-start flex-col gap-3 text-sm ">
+              {getCategory &&
+                    getCategory.map((data, key) => (                      
+                      <li key={key}>
+                        <Link to={`/shop-by-category/${data.id}`}>
+                        {data.name}
+                      </Link>
+                      </li>
+              ))}
+            </ul>
           </div>
-          <DiscountProduct/>
-          <TopProduct/>
-          <NewProduct/>
+          <div className="inline-block h-[21rem] min-h-[1.5rem] w-px self-stretch bg-zinc-300 ml-4"></div>
+          <Slider/>
+        </div>
+        <div className="flex px-20 flex-col mb-8 mt-12">
+          <div className="flex justify-start items-start gap-4">
+            <div className="bg-red-600 w-4 h-8 rounded-sm"></div>
+            <p className="font-semibold "></p>
+          </div>
+          <p className="font-bold text-3xl mt-4">All Products</p>
+
+          <div className="container  flex gap-8 flex-wrap max-w-2xl lg:max-w-7xl">
+            <div className="flex h-max mt-12  justify-start items-start gap-9 flex-wrap">
+              <Product />
+            </div>
+          </div>
+        </div>
           <Advertisment/>
       </div>
     </div>

@@ -22,20 +22,21 @@ export default function Slider() {
 
   const slides = [
     {
-      url: "https://miro.medium.com/v2/resize:fit:3200/1*hYTLl8Q_RZu-4rEKvhiNuQ.jpeg",
+      url: "https://dslv9ilpbe7p1.cloudfront.net/zZH4ynNpuqwP_43TAWlX7g_store_banner_image.jpeg",
     },
     {
-      url: "https://www.khmertimeskh.com/wp-content/uploads/2023/05/58725.jpg",
+      url: "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2024/SportsAndOutdoors/Spring-Refresh-24/Sports/DT/6-SeasonalStory/6-DT-Sports-01.jpg",
     },
     {
-      url: "https://assets.apnews.com/d0/e3/c6e4ea9831ec69129ad7b2bb846d/06730db1b9d44f03bc5ced036371d706",
+      url: "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2024/SportsAndOutdoors/Spring-Refresh-24/Sports/DT/6-SeasonalStory/6-DT-Sports-02.jpg",
     },
     {
-      url: "https://www.parks.vic.gov.au/-/media/project/pv/main/parks/images/places-to-see/great-otway-national-park/great-ocean-walk/multi-day-hikes/great-ocean-walk-camping-blanket-bay-1920x1124.png?rev=f478ca1c49364d0e8825d8e6c9264086",
+      url: "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2024/SportsAndOutdoors/Summer-Refresh-24/Sports/DT/6-Seasonal/6-DT-Seasonal-03.jpg",
     },
     {
-      url: "https://www.rainews.it/dl/img/2022/01/02/1641127837508_AP.jpg",
+      url: "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2024/SportsAndOutdoors/Spring-Refresh-24/Sports/DT/6-SeasonalStory/6-DT-Sports-04.jpg",
     },
+   
   ];
 
   return (

@@ -2,119 +2,437 @@ import React from 'react'
 
 
 const SportCategory = () => {
-    return (
-        <div>
-            <form class="w-80 mx-auto  p-6 rounded-xl ">
-        <select
-          id="underline_select"
-          class="block w-full py-2 px-3 text- bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 transition ease-in-out duration-150"
-        >
-          <option selected disabled>
-            Sport Categrory
-          </option>
-          <option value="US">Volleyball</option>
-          <option value="CA">Football</option>
-          <option value="FR">Basketball</option>
-          <option value="DE">Tennis</option>
-          <option value="DE">Running</option>
-        </select>
-      </form>
-        </div>
-      )
-}
-const ProductCategory = () => {
-    return (
-        <div>
-            <form class="w-80 mx-auto  p-6 rounded-xl ">
-        <select
-          id="underline_select"
-          class="block w-full py-2 px-3 text- bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 transition ease-in-out duration-150"
-        >
-          <option selected disabled>
-            Product Categrory
-          </option>
-          <option value="US">T-Shirt</option>
-          <option value="CA">Short</option>
-          <option value="FR">Pants</option>
-          <option value="DE">Shoes</option>
-          <option value="DE">Socks</option>
-        </select>
-      </form>
-        </div>
-      )
-}
-const Gender = () => {
-    return (
-        <div>
-            <form class="w-80 mx-auto  p-6 rounded-xl ">
-        <select
-          id="underline_select"
-          class="block w-full py-2 px-3 text- bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 transition ease-in-out duration-150"
-        >
-          <option selected disabled>
-            Gender
-          </option>
-          <option value="US">Male</option>
-          <option value="CA">Female</option>
-        </select>
-      </form>
-        </div>
-      )
-}
-const Size = () => {
-    return (
-        <div>
-            <form class="w-80 mx-auto  p-6 rounded-xl ">
-        <select
-          id="underline_select"
-          class="block w-full py-2 px-3 text- bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 transition ease-in-out duration-150"
-        >
-          <option selected disabled>
-            Size
-          </option>
-          <option value="US">34/38</option>
-          <option value="CA">39/40</option>
-          <option value="FR">S</option>
-          <option value="DE">M</option>
-          <option value="DE">L</option>
-          <option value="DE">XL</option>
-          <option value="DE">2XL</option>
-          <option value="DE">3XL</option>
-        </select>
-      </form>
-        </div>
-      )
-}
+  return (
+    <div className='w-80 mx-auto  p-6 rounded-xl '>
+        <div >
+            <p className="font-semibold text-xl mb-3">Sport Categories</p>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              VolleyBall
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              FootBall
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              BasketBall
+            </label>
+          </div>
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              Camping and Hiding
+            </label>
+          </div>
+             
+      </div>
+  )
+};
+
+
 const Brands = () => {
     return (
-        <div>
-            <form class="w-80 mx-auto  p-6 rounded-xl ">
-        <select
-          id="underline_select"
-          class="block w-full py-2 px-3 text- bg-transparent border-b-2 border-gray-300 appearance-none focus:outline-none focus:border-indigo-500 transition ease-in-out duration-150"
-        >
-          <option selected disabled>
-            Brands
-          </option>
-          <option value="US">Nike</option>
-          <option value="CA">Adidas</option>
-          <option value="FR">Puma</option>
-          <option value="DE">New Balance</option>
-          <option value="DE">Under Armour</option>
-        </select>
-      </form>
+      <div className='w-80 mx-auto  p-6 rounded-xl '>
+      <div >
+          <p className="font-semibold text-xl mb-3">Brands</p>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Nike
+          </label>
         </div>
+
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Adidas
+          </label>
+        </div>
+
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Puma
+          </label>
+        </div>
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Mikasa
+          </label>
+        </div>
+       
+          
+    </div>
       )
+}
+const Price = () => {
+  return (
+      <div className='w-80 mx-auto  p-6 rounded-xl '>
+        <div >
+            <p className="font-semibold text-xl mb-3">Price</p>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              Under $20
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              $20-$40
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              $50-100$
+            </label>
+          </div>
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              Over $100
+            </label>
+          </div>
+          <div className="flex justify-start items-start mt-2 ">
+            <div className="flex justify-start items-start w-full h-8">
+              <input
+                type="text"
+                id="min-price"
+                className=" p-1.5  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500  w-3/4  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Min Price"
+                required
+              />
+            </div>
+            <div className="flex justify-start items-start w-full h-8">
+              <input
+                type="text"
+                id="max-price"
+                className="p-1.5  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500  w-3/4  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Max Price"
+                required
+              />
+            </div>
+          </div>
+      </div>
+    )
 }
 
 function Sidebar() {
   return (
     <>
-            <SportCategory />
-            <ProductCategory />
-            <Gender />
-            <Size />
-            <Brands />
+    <div className="shadow-2xl gap-8 p-4 w-full">
+        <div className='w-80 mx-auto  p-6 rounded-xl '>
+          <div >
+              <p className="font-semibold text-xl mb-3">Sport Categories</p>
+              <input
+                id="default-radio-1"
+                type="checkbox"
+                value=""
+                name="default-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+              />
+              <label
+                htmlFor="default-radio-1"
+                className="ms-2 text-md font-medium text-black">
+                VolleyBall
+              </label>
+            </div>
+
+            <div>
+              <input
+                id="default-radio-1"
+                type="checkbox"
+                value=""
+                name="default-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+              />
+              <label
+                htmlFor="default-radio-1"
+                className="ms-2 text-md font-medium text-black">
+                FootBall
+              </label>
+            </div>
+
+            <div>
+              <input
+                id="default-radio-1"
+                type="checkbox"
+                value=""
+                name="default-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+              />
+              <label
+                htmlFor="default-radio-1"
+                className="ms-2 text-md font-medium text-black">
+                BasketBall
+              </label>
+            </div>
+            <div>
+              <input
+                id="default-radio-1"
+                type="checkbox"
+                value=""
+                name="default-radio"
+                className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+              />
+              <label
+                htmlFor="default-radio-1"
+                className="ms-2 text-md font-medium text-black">
+                Camping and Hiding
+              </label>
+            </div>
+              
+        </div>
+        <div className='w-80 mx-auto  p-6 rounded-xl '>
+      <div >
+          <p className="font-semibold text-xl mb-3">Brands</p>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Nike
+          </label>
+        </div>
+
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Adidas
+          </label>
+        </div>
+
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Puma
+          </label>
+        </div>
+        <div>
+          <input
+            id="default-radio-1"
+            type="checkbox"
+            value=""
+            name="default-radio"
+            className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+          />
+          <label
+            htmlFor="default-radio-1"
+            className="ms-2 text-md font-medium text-black">
+            Mikasa
+          </label>
+        </div>
+       
+          
+        </div>
+        <div className='w-80 mx-auto  p-6 rounded-xl '>
+        <div >
+            <p className="font-semibold text-xl mb-3">Price</p>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              Under $20
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              $20-$40
+            </label>
+          </div>
+
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              $50-100$
+            </label>
+          </div>
+          <div>
+            <input
+              id="default-radio-1"
+              type="checkbox"
+              value=""
+              name="default-radio"
+              className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 "
+            />
+            <label
+              htmlFor="default-radio-1"
+              className="ms-2 text-md font-medium text-black">
+              Over $100
+            </label>
+          </div>
+          <div className="flex justify-start items-start mt-2 ">
+            <div className="flex justify-start items-start w-full h-8">
+              <input
+                type="text"
+                id="min-price"
+                className=" p-1.5  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500  w-3/4  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Min Price"
+                required
+              />
+            </div>
+            <div className="flex justify-start items-start w-full h-8">
+              <input
+                type="text"
+                id="max-price"
+                className="p-1.5  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500  w-3/4  dark:placeholder-gray-400  dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Max Price"
+                required
+              />
+            </div>
+          </div>
+        </div>
+      </div>
      </>  
   )
 }

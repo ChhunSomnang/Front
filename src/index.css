@@ -22,4 +22,16 @@
     border-radius: 1rem; /* Adjust border radius as needed */
     outline: none;
     
+
+  }
+
+
+  /* For small devices, such as phones */
+@media (max-width: 640px) {
+    .w-80 {
+      width: 100%; /* Change width to fit the screen */
+    }
+    .p-6 {
+      padding: 3rem 1rem; /* Adjust padding for smaller screens */
+    }
   }
